@@ -1,5 +1,5 @@
 import React from "react";
-// comment
+import "./Homepage.css";
 
 import { Box } from "@mui/material";
 
