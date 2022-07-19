@@ -1,13 +1,5 @@
-#header {
-    display: flex;
-}
-
 #title {
     font-size: 25px;
-}
-
-#flex-child {
-    flex: 1;
 }
 
 a {
