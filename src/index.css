@@ -31,6 +31,32 @@ code {
     monospace;
 }
 
+/* homepage image style */
+.self-img {
+  width: 300px;
+  border-radius: 5%;
+  border: 4px solid var(--primary);
+}
+
+/* projects page style */
+.projects {
+  width: 30vw;
+  border-radius: 5%;
+  border: 4px solid var(--primary);
+}
+
+#contact {
+  margin-top: 5vw;
+}
+
+.contact-section {
+  margin: auto;
+  padding: 10px;
+  width: 60vw;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
 a {
   text-decoration: none;
   color: var(--dark);
