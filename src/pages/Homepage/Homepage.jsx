@@ -1,5 +1,4 @@
 import React from "react";
-import "./Homepage.css";
 import selfImg from "../../images/self-image-small.jpg";
 
 function Homepage() {
