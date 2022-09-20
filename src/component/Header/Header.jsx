@@ -8,6 +8,7 @@ function Header() {
                 <Link to="/" className="ml-4 mr-4"><h2>About</h2></Link>
                 <Link to="/Projects" className="ml-4 mr-4"><h2>Projects</h2></Link>
                 <Link to="/Contact" className="ml-4 mr-4"><h2>Contact</h2></Link>
+                <Link to="/Resume" className="ml-4 mr-4"><h2>Resume</h2></Link>
             </div>
         </div>
     );
