@@ -7,6 +7,7 @@ import Home from './pages/Homepage/Homepage';
 import Projects from './pages/Projects/Projects';
 import Travels from './pages/Travels/Travels';
 import Contact from './pages/Contact/Contact';
+import Resume from './pages/Resume/Resume';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
             <Route
               path="/Contact"
               element={<Contact />}
+            />
+            <Route
+              path="/Resume"
+              element={<Resume />}
             />
           </Routes>
         </div>
