@@ -14,9 +14,28 @@ function Resume() {
         setNumPages(numPages);
     }
 
+    // Function will execute on click of button
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('ResumeDoc.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'ResumeDoc.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
         <div>
             <h1>View my resume!</h1>
+            <button onClick={onButtonClick}>
+                Download PDF
+            </button>
             <Document
                 file={resume}
                 options={{ workerSrc: "/pdf.worker.js" }}
