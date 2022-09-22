@@ -8,6 +8,7 @@ import Projects from './pages/Projects/Projects';
 import Travels from './pages/Travels/Travels';
 import Contact from './pages/Contact/Contact';
 import Resume from './pages/Resume/Resume';
+import data from './data/projectData';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             />
             <Route
               path="/Projects"
-              element={<Projects />}
+              element={<Projects data={data} />}
             />
             <Route
               path="/Travels"
