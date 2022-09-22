@@ -1,20 +1,32 @@
 import React from "react";
-import runBuddyImg from "../../images/run-buddy_Screenshot.png";
-import moveiesImg from "../../images/movies screenshot.png";
-import myPantryImg from "../../images/my-pantry screenshot.png";
-import wheytsUpImg from "../../images/Wheyts-Up screenshot.png";
+// import ProjectArray from "../../Data/Projects";
+// import runBuddyImg from "../../images/run-buddy_Screenshot.png";
+// import moveiesImg from "../../images/movies screenshot.png";
+// import myPantryImg from "../../images/my-pantry screenshot.png";
+// import wheytsUpImg from "../../images/Wheyts-Up screenshot.png";
 
-function Projects() {
+function Projects(props) {
     return (
         <div id="projects">
+            {console.log(props)}
             {/* projects section */}
             <h2>Projects</h2>
+            {/* map through projects array */}
+            {/* {ProjectArray.data.map((item, idx) => {
+                if (item !== null) {
+                    return (
+                        <div className="Projects" key={idx}>
+                        </div>
+                    )
+                } else {
+                    return (
+                        <>
+                            <p>failure</p>
+                        </>
+                    );
+                }
+            })} */}
             {/* <a href="https://wheyts-up.herokuapp.com/"><img
-                title="Budget App"
-                class="projects" src={wheytsUpImg}
-                alt="Budget App Websit Homepage" /></a>
-            <p>Budget App is an app designed to be a simple and easy to use budgeting app that does not need to connect to your bank account. Built using MongoDB, React.js, JSON web Tokens and more by Kiri and Keian.</p> */}
-            <a href="https://wheyts-up.herokuapp.com/"><img
                 title="Wheyts Up"
                 class="projects" src={wheytsUpImg}
                 alt="Wheyts Up Website Homepage" /></a>
@@ -31,7 +43,7 @@ function Projects() {
             <a href="https://KiriAnthony.github.io/run-buddy"><img title="Run Buddy"
                 class="first-project projects" src={runBuddyImg}
                 alt="Run-Buddy Website Homepage" /></a>
-            <p>Run-Buddy is the First Website Built by Kiri. This site specialized in CSS, HTML, and JavaScript.</p>
+            <p>Run-Buddy is the First Website Built by Kiri. This site specialized in CSS, HTML, and JavaScript.</p> */}
         </div>
     );
 }
